@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redCircle: UIView!
+    @IBOutlet var yellowCircle: UIView!
+    @IBOutlet var greenCircle: UIView!
+    @IBOutlet var showButton: UIButton!
+    
+ 
+    
     override func viewDidLoad() {
+        
+        redCircle.color
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showButtonPressed() {
+    }
+    
+    
 }
 
