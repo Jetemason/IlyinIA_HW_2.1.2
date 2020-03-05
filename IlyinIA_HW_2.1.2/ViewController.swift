@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet var redCircle: UIView!
@@ -15,14 +16,21 @@ class ViewController: UIViewController {
     @IBOutlet var greenCircle: UIView!
     @IBOutlet var showButton: UIButton!
     
- 
+    @IBOutlet var circlesStackView: UIStackView!
     
     override func viewDidLoad() {
-        
-        redCircle.color
-        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        redCircle.alpha = 0.3
+        yellowCircle.alpha = 0.3
+        greenCircle.alpha = 0.3
+        
+        redCircle.layer.cornerRadius = 50
+        
+        
+        
+        
+        
     }
 
     @IBAction func showButtonPressed() {
