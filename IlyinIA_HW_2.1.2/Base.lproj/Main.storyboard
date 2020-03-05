@@ -15,32 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-IE-Nfu">
-                                <rect key="frame" x="124.5" y="76" width="165" height="525"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-BZ-fLj">
-                                        <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
-                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="YGc-BZ-fLj" secondAttribute="height" multiplier="1:1" id="1RA-rn-org"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYU-UZ-HnD">
-                                        <rect key="frame" x="0.0" y="180" width="165" height="165"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="KYU-UZ-HnD" secondAttribute="height" multiplier="1:1" id="ZqX-6M-mx2"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-kL-3ho">
-                                        <rect key="frame" x="0.0" y="360" width="165" height="165"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="kM3-kL-3ho" secondAttribute="height" multiplier="1:1" id="yes-gC-dC6"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCw-OO-HL6">
                                 <rect key="frame" x="81" y="766" width="252" height="46"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,27 +26,50 @@
                                     <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIg-2Z-pw7"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TA-5a-0VS">
+                                <rect key="frame" x="132" y="107" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5TA-5a-0VS" secondAttribute="height" multiplier="1:1" id="1hN-5A-6yu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i30-Yr-pnh">
+                                <rect key="frame" x="132" y="296" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i30-Yr-pnh" secondAttribute="height" multiplier="1:1" id="dY9-yI-0P1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9V-a3-pvg">
+                                <rect key="frame" x="132" y="481" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M9V-a3-pvg" secondAttribute="height" multiplier="1:1" id="EjC-oP-HZX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5TA-5a-0VS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="8J8-oW-Pvf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QCw-OO-HL6" secondAttribute="bottom" constant="50" id="HhU-5C-IXk"/>
-                            <constraint firstItem="kM3-kL-3ho" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="165:818" id="Hok-W2-KcL"/>
-                            <constraint firstItem="QCw-OO-HL6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LwV-Zg-xOt"/>
-                            <constraint firstItem="Phg-IE-Nfu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rbv-Ka-M2k"/>
+                            <constraint firstItem="M9V-a3-pvg" firstAttribute="top" secondItem="i30-Yr-pnh" secondAttribute="bottom" constant="35" id="L7X-yT-61P"/>
                             <constraint firstItem="QCw-OO-HL6" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="126:409" id="Ye7-zA-zQ2"/>
-                            <constraint firstItem="QCw-OO-HL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="lPE-Rr-hMo"/>
-                            <constraint firstItem="KYU-UZ-HnD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="165:818" id="nyC-95-qpx"/>
-                            <constraint firstItem="YGc-BZ-fLj" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="165:818" id="qfT-Hk-W9J"/>
-                            <constraint firstItem="Phg-IE-Nfu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="vtX-Rv-2EO"/>
+                            <constraint firstItem="5TA-5a-0VS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YfY-xG-nEV"/>
+                            <constraint firstItem="i30-Yr-pnh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="Zz9-9v-zeG"/>
+                            <constraint firstItem="QCw-OO-HL6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="akK-4m-iHa"/>
+                            <constraint firstItem="i30-Yr-pnh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="czG-Xr-Ebo"/>
+                            <constraint firstItem="5TA-5a-0VS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="ig9-3j-UI6"/>
+                            <constraint firstItem="M9V-a3-pvg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lna-1U-8Xl"/>
+                            <constraint firstItem="i30-Yr-pnh" firstAttribute="top" secondItem="5TA-5a-0VS" secondAttribute="bottom" constant="39" id="uox-JQ-l5T"/>
+                            <constraint firstItem="M9V-a3-pvg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:448" id="vLP-s6-6yq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="circlesStackView" destination="Phg-IE-Nfu" id="96j-iw-aEw"/>
-                        <outlet property="greenCircle" destination="kM3-kL-3ho" id="jyc-6V-n90"/>
-                        <outlet property="redCircle" destination="YGc-BZ-fLj" id="wcf-II-cdx"/>
-                        <outlet property="showButton" destination="QCw-OO-HL6" id="U5Q-0u-dce"/>
-                        <outlet property="yellowCircle" destination="KYU-UZ-HnD" id="07T-b3-pcJ"/>
+                        <outlet property="buttonStart" destination="QCw-OO-HL6" id="U5Q-0u-dce"/>
+                        <outlet property="greenLight" destination="M9V-a3-pvg" id="caN-hb-5TA"/>
+                        <outlet property="redLight" destination="5TA-5a-0VS" id="kVn-WS-dwr"/>
+                        <outlet property="yellowLight" destination="i30-Yr-pnh" id="3gX-OO-mTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
